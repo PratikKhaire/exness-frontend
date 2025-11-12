@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
+import ButtonHero from './Button';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ export function Navigation() {
         isScrolled ? 'top-2' : 'top-4'
       }`}
     >
-      <div className={`bg-white rounded-full px-3 py-2 shadow-[0px_-1px_2.9px_0px_inset_rgba(0,0,0,0.25)] top-0 transition-all duration-300 ${
+      <div className={`bg-white rounded-md px-3 py-2 shadow-[0px_-1px_2.9px_0px_inset_rgba(0,0,0,0.25)] top-0 transition-all duration-300 ${
         isScrolled ? 'shadow-lg' : ''
       }`}>
         <div className="flex justify-between items-center gap-6">
@@ -63,10 +64,9 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <button className="relative px-5 py-2 bg-gradient-to-b from-[#ffeddb] via-[#ffac7c] to-[#f37328] rounded-full border border-[#ff5d00] shadow-[0px_2px_8px_0px_rgba(243,115,40,0.3)] overflow-hidden group transition-all duration-300 hover:shadow-[0px_4px_12px_0px_rgba(243,115,40,0.4)] hover:scale-105">
-              <div className="absolute inset-0 shadow-[0px_2px_0.4px_0px_inset_rgba(251,186,117,0.77)]" />
-              <span className="relative text-white capitalize z-10 text-sm">Start</span>
-            </button>
+          <ButtonHero title="Sing up" size="small" />
+
+
           </div>
 
           {/* Mobile Menu Button */}

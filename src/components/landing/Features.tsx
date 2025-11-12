@@ -99,6 +99,9 @@ export function Features() {
         </svg>
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+      
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -117,40 +120,18 @@ export function Features() {
             Professional-grade tools and enterprise security, designed for traders of all levels.
           </p>
         </motion.div>
+        <div className=' bottom-10 left-0 right-0 z-0 items-center'>
+        {/* Orange-400 gradient on top */}
+        <div className='w-full h-32 bg-gradient-to-l from-orange-100/5 via-orange-400 to-transparent '></div>
+        {/* Full width image */}
+        <img src="src/assets/dashboard.png" alt="img" className='w-[800px] h-[500px] align-top ' />
+      </div>
 
         {/* Features grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                className="group relative p-8 rounded-2xl bg-white border border-black/10 hover:border-[#f37328]/30 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="space-y-4">
-                  {/* Icon */}
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#ffeddb] to-[#ffac7c] flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                    <Icon className="w-6 h-6 text-[#f37328]" />
-                  </div>
-
-                  {/* Content */}
-                  <div className="space-y-2">
-                    <h3 className="text-black">
-                      {feature.title}
-                    </h3>
-                    <p className="text-black/60 text-sm leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
+        
+      {/* <div className=' absolute bottom-10 left-0 right-0'>
+        <img src="src/assets/trading.png" alt="img" />
+      </div> */}
       </div>
     </section>
   );
