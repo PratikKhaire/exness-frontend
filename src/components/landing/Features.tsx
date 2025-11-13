@@ -1,21 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Zap, 
-  Shield, 
-  BarChart3, 
-  Headphones, 
-  Wallet, 
-  Globe,
-  Lock,
-  Clock
-} from 'lucide-react';
 
-interface Feature {
-  icon: React.ElementType;
-  title: string;
-  description: string;
-}
+
+
 
 export function Features() {
   const [isInView, setIsInView] = useState(false);
@@ -38,48 +25,7 @@ export function Features() {
     return () => observer.disconnect();
   }, []);
 
-  const features: Feature[] = [
-    {
-      icon: Zap,
-      title: 'Lightning-Fast Execution',
-      description: 'Execute trades in microseconds with our cutting-edge infrastructure and direct market access.',
-    },
-    {
-      icon: Shield,
-      title: 'Bank-Grade Security',
-      description: 'Military-grade encryption, cold storage, and 2FA protect your assets 24/7.',
-    },
-    {
-      icon: BarChart3,
-      title: 'Real-Time Analytics',
-      description: 'Advanced charting tools, technical indicators, and AI-powered insights at your fingertips.',
-    },
-    {
-      icon: Headphones,
-      title: '24/7 Expert Support',
-      description: 'Our dedicated team of trading experts is always available to assist you.',
-    },
-    {
-      icon: Wallet,
-      title: 'Multi-Asset Wallet',
-      description: 'Store, manage, and trade multiple cryptocurrencies and assets in one secure place.',
-    },
-    {
-      icon: Globe,
-      title: 'Global Liquidity',
-      description: 'Access deep liquidity pools and trade across multiple exchanges simultaneously.',
-    },
-    {
-      icon: Lock,
-      title: 'Regulatory Compliance',
-      description: 'Fully licensed and compliant with international financial regulations.',
-    },
-    {
-      icon: Clock,
-      title: 'Instant Deposits',
-      description: 'Fund your account instantly with multiple payment methods and zero fees.',
-    },
-  ];
+  
 
   return (
     <section
@@ -109,10 +55,25 @@ export function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <div className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20">
-            <span className="text-sm text-[#f37328] uppercase tracking-wider">Platform Features</span>
+          <div className="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20 shadow-cyan-900">
+            <span className="text-sm text-gray-900 uppercase tracking-wider">Platform Features
+              <span className="absolute bottom-0 left-0 h-full -ml-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-auto h-full opacity-100 object-stretch"
+          viewBox="0 0 487 487"
+        >
+          <path
+            fillOpacity=".1"
+            fillRule="nonzero"
+            fill="#FFF"
+            d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
+          ></path>
+        </svg>
+      </span>
+            </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-3xl mx-auto font-serif">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-3xl mx-auto font-normal">
             Everything You Need to{' '}
             <span className="text-[#f37328]">Trade Smart</span>
           </h2>
@@ -120,18 +81,16 @@ export function Features() {
             Professional-grade tools and enterprise security, designed for traders of all levels.
           </p>
         </motion.div>
-        <div className=' bottom-10 left-0 right-0 z-0 items-center'>
+
+
+
+        <div className='flex justify-center items-center w-full'>
         {/* Orange-400 gradient on top */}
-        <div className='w-full h-32 bg-gradient-to-l from-orange-100/5 via-orange-400 to-transparent '></div>
         {/* Full width image */}
-        <img src="src/assets/dashboard.png" alt="img" className='w-[800px] h-[500px] align-top ' />
+        <img src="src/assets/dashboard.png" alt="img" className='w-[900px] h-[600px]' />
       </div>
 
-        {/* Features grid */}
         
-      {/* <div className=' absolute bottom-10 left-0 right-0'>
-        <img src="src/assets/trading.png" alt="img" />
-      </div> */}
       </div>
     </section>
   );

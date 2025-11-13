@@ -41,10 +41,10 @@ export function Navigation() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2 cursor-pointer pl-3"
           >
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#f37328] to-[#ffac7c] flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br bg-gray-800  flex items-center justify-center">
               <TrendingUp className="w-4 h-4 text-white" />
             </div>
-            <span className="bg-gradient-to-r from-[#f37328] to-[#ffac7c] bg-clip-text text-transparent uppercase tracking-tight">
+            <span className="bg-gradient-to-r bg-gray-800  bg-clip-text text-transparent uppercase tracking-tight">
               EXNESS-100
             </span>
           </motion.div>
