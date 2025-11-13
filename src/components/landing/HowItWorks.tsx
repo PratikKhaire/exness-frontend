@@ -66,10 +66,10 @@ export function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <div className="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20">
+          <div className="inline-block px-6 py-2 rounded-lg        bg-gradient-to-r  from-[#e9e9e9] to-[#747372] border border-[#f37328]/20">
             <span className="text-sm text-gray-900 uppercase tracking-wider">How It Works</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-4xl mx-auto ">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-4xl mx-auto font-medium">
             Start Trading in{' '}
             <span className="text-gray-600">3 Simple Steps</span>
           </h2>
@@ -94,16 +94,16 @@ export function HowItWorks() {
                 className="relative"
               >
                 {/* Step card */}
-                <div className="relative p-8 rounded-2xl bg-white border border-black/10 hover:border-[#f37328]/30 hover:shadow-lg transition-all duration-300 group">
+                <div className="relative p-8 rounded-2xl bg-white border border-black/10 hover:border-gray-900/30 hover:shadow-lg transition-all duration-300 group">
                   {/* Step number */}
-                  <div className="absolute -top-4 left-8 px-4 py-1 rounded-full bg-gradient-to-r from-[#f37328] to-[#ffac7c] text-white text-sm">
+                  <div className="absolute -top-4 left-8 px-4 py-1 rounded-full bg-gradient-to-r from-gray-600 to-gray-50 text-white text-sm border-gray-900">
                     {step.number}
                   </div>
 
                   <div className="space-y-6 pt-4">
                     {/* Icon */}
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-8 h-8 text-[#f37328]" />
+                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-gray-100 to-gray-400/50 border border-gray-700/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-8 h-8 text-gray-700" />
                     </div>
 
                     {/* Content */}
@@ -121,7 +121,7 @@ export function HowItWorks() {
                   {index < steps.length - 1 && (
                     <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10">
                       <div className="w-8 h-8 rounded-full bg-white border border-black/10 flex items-center justify-center">
-                        <ArrowRight className="w-4 h-4 text-[#f37328]" />
+                        <ArrowRight className="w-4 h-4 text-[#6d6b6a]" />
                       </div>
                     </div>
                   )}
@@ -139,13 +139,7 @@ export function HowItWorks() {
           className="text-center mt-16"
         >
           <p className="text-black/60 mb-4">Ready to get started?</p>
-          {/* <button className="relative px-8 py-3 bg-gradient-to-b from-[#ffeddb] via-[#ffac7c] to-[#f37328] rounded-[14px] border-2 border-[#ff5d00] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] group overflow-hidden">
-            <div className="absolute inset-0 shadow-[0px_4px_0.4px_0px_inset_rgba(251,186,117,0.77)]" />
-            <span className="relative text-white capitalize inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-              Create Your Free Account
-              <ArrowRight className="w-5 h-5" />
-            </span>
-          </button> */}
+       
 
           <ButtonHero title='Create Your Free Account' size='medium'/>
         </motion.div>

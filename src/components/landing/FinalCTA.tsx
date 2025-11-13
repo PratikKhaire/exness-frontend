@@ -44,10 +44,10 @@ export function FinalCTA() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 border border-white/40 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/30 border border-white/40 backdrop-blur-sm"
             >
               <Sparkles className="w-4 h-4 text-white" />
-              <span className="text-sm text-white">Join 1 Million+ Traders</span>
+              <span className="text-sm text-gray-900">Join 1 Million+ Traders</span>
             </motion.div>
 
             {/* Headline */}
