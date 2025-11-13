@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { UserPlus, Wallet, TrendingUp, ArrowRight } from 'lucide-react';
+import { Button } from '../ui/button';
+import ButtonHero from './Button';
 
 interface Step {
   number: string;
@@ -41,7 +43,7 @@ export function HowItWorks() {
       number: '02',
       icon: Wallet,
       title: 'Fund Your Wallet',
-      description: 'Deposit funds instantly using bank transfer, credit card, or cryptocurrency.',
+      description: 'Get $1000 dollor free founding on the trading account.',
     },
     {
       number: '03',
@@ -64,12 +66,12 @@ export function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <div className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20">
-            <span className="text-sm text-[#f37328] uppercase tracking-wider">How It Works</span>
+          <div className="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20">
+            <span className="text-sm text-gray-900 uppercase tracking-wider">How It Works</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-3xl mx-auto font-serif">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-4xl mx-auto ">
             Start Trading in{' '}
-            <span className="text-[#f37328]">3 Simple Steps</span>
+            <span className="text-gray-600">3 Simple Steps</span>
           </h2>
           <p className="text-lg md:text-xl text-black/60 max-w-2xl mx-auto">
             Get started with TradePro in less than 5 minutes. It's fast, secure, and incredibly easy.
@@ -137,13 +139,15 @@ export function HowItWorks() {
           className="text-center mt-16"
         >
           <p className="text-black/60 mb-4">Ready to get started?</p>
-          <button className="relative px-8 py-3 bg-gradient-to-b from-[#ffeddb] via-[#ffac7c] to-[#f37328] rounded-[14px] border-2 border-[#ff5d00] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] group overflow-hidden">
+          {/* <button className="relative px-8 py-3 bg-gradient-to-b from-[#ffeddb] via-[#ffac7c] to-[#f37328] rounded-[14px] border-2 border-[#ff5d00] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] group overflow-hidden">
             <div className="absolute inset-0 shadow-[0px_4px_0.4px_0px_inset_rgba(251,186,117,0.77)]" />
             <span className="relative text-white capitalize inline-flex items-center gap-2 group-hover:gap-3 transition-all">
               Create Your Free Account
               <ArrowRight className="w-5 h-5" />
             </span>
-          </button>
+          </button> */}
+
+          <ButtonHero title='Create Your Free Account' size='medium'/>
         </motion.div>
       </div>
     </section>

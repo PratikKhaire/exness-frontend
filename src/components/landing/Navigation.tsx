@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Menu, X } from 'lucide-react';
-import { Button } from '../ui/button';
 import ButtonHero from './Button';
 
 export function Navigation() {

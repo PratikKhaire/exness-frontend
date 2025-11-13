@@ -1,6 +1,8 @@
 import React from 'react'
 
-const ButtonHero = (props) => {
+const ButtonHero = (props: { title: string; size: string; }) => {
+
+  
 
    const sizeClasses = {
     small: "px-4 py-2 text-sm",
@@ -14,7 +16,7 @@ const ButtonHero = (props) => {
 
   return (
    <button
-      className={`relative inline-flex items-center justify-center overflow-hidden tracking-tighter text-white bg-gray-800 rounded-md group ${sizeClasses[size]}`}
+      className={`relative inline-flex items-center justify-center overflow-hidden tracking-tighter text-white bg-gray-800 rounded-md group ${sizeClasses[size as  keyof typeof sizeClasses]}`}
     >
       {/* Hover background animation */}
       <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#ff6710] rounded-full group-hover:w-56 group-hover:h-56"></span>

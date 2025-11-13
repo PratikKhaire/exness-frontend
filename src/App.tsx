@@ -2,7 +2,6 @@ import { Navigation } from './components/landing/Navigation';
 import { Hero } from './components/landing/Hero';
 import { Features } from './components/landing/Features';
 import { HowItWorks } from './components/landing/HowItWorks';
-import { SocialProof } from './components/landing/SocialProof';
 import { FinalCTA } from './components/landing/FinalCTA';
 import { Footer } from './components/landing/Footer';
 
@@ -26,7 +25,6 @@ export default function App() {
         <Hero />
         <Features />
         <HowItWorks />
-        <SocialProof />
         <FinalCTA /> 
       </main>
       <Footer />

@@ -26,14 +26,14 @@ export function FinalCTA() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 md:py-32 bg-white overflow-hidden"
+      className="relative py-20 md:py-2 bg-white overflow-hidden"
     >
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="relative p-8 md:p-12 lg:p-16 rounded-3xl bg-gradient-to-br from-[#ffeddb] via-[#ffac7c] to-[#f37328] border-2 border-[#ff5d00] shadow-2xl overflow-hidden"
+          className="relative p-8 md:p-12 lg:p-16 rounded-3xl bg-gradient-to-br from-gray-50] via-gray-400 to-gray-800 border-2 border-gray-900 shadow-2xl overflow-hidden"
         >
           {/* Decorative overlay */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:2rem_2rem]" />
