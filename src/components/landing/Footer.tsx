@@ -1,4 +1,4 @@
-import { TrendingUp, Twitter, Linkedin, Github, Youtube } from 'lucide-react';
+import { Twitter, Linkedin, Github, Youtube } from 'lucide-react';
 
 export function Footer() {
   const footerSections = [
@@ -6,19 +6,16 @@ export function Footer() {
       title: 'Product',
       links: [
         { name: 'Trading Platform', href: '#' },
-        { name: 'Mobile App', href: '#' },
+        { name: 'Chart ', href: '#' },
         { name: 'API Documentation', href: '#' },
-        { name: 'Pricing', href: '#' },
-        { name: 'Security', href: '#' },
+        
       ],
     },
     {
       title: 'Company',
       links: [
         { name: 'About Us', href: '#' },
-        { name: 'Careers', href: '#' },
-        { name: 'Press Kit', href: '#' },
-        { name: 'Blog', href: '#' },
+        
         { name: 'Contact', href: '#' },
       ],
     },
@@ -27,19 +24,17 @@ export function Footer() {
       links: [
         { name: 'Help Center', href: '#' },
         { name: 'Trading Guide', href: '#' },
-        { name: 'Webinars', href: '#' },
+       
         { name: 'Market News', href: '#' },
-        { name: 'Community', href: '#' },
       ],
     },
     {
       title: 'Legal',
       links: [
-        { name: 'Terms of Service', href: '#' },
+       
         { name: 'Privacy Policy', href: '#' },
         { name: 'Cookie Policy', href: '#' },
-        { name: 'Compliance', href: '#' },
-        { name: 'Licenses', href: '#' },
+        
       ],
     },
   ];
@@ -59,7 +54,7 @@ export function Footer() {
           {/* Brand column */}
           <div className="col-span-2 space-y-4">
             <div className="flex items-center gap-2">
-              <span className="text-xl bg-gradient-to-r from-[#f37328] to-[#ffac7c] bg-clip-text text-transparent uppercase tracking-tight">
+              <span className="text-xl bg-gradient-to-r from-[#777574] to-[#ffffff] bg-clip-text text-transparent uppercase tracking-tight">
                 EXNESS-100
               </span>
             </div>

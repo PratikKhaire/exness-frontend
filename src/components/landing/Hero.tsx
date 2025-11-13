@@ -113,7 +113,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-gradient-to-br from-gray-100 via-gray-400 to-gray-800 text capitalize text-8xl  mx-auto leading-none font-bold text-center -tracking-[3px] bg-clip-text text-transparent
+            className="bg-gradient-to-tr from-gray-50 via-gray-400 to-gray-800 text capitalize text-8xl  mx-auto leading-none font-bold text-center -tracking-[3px] bg-clip-text text-transparent
 "
           >
             trade like pro
