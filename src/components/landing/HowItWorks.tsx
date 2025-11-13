@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { UserPlus, Wallet, TrendingUp, ArrowRight } from 'lucide-react';
-import { Button } from '../ui/button';
 import ButtonHero from './Button';
 
 interface Step {

@@ -55,7 +55,7 @@ export function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <div className="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-[#ffeddb] to-[#ffac7c] border border-[#f37328]/20 shadow-cyan-900">
+          <div className="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-[#ffffff] to-gray-500 border border-gray-500/20 shadow-cyan-900">
             <span className="text-sm text-gray-900 uppercase tracking-wider">Platform Features
               <span className="absolute bottom-0 left-0 h-full -ml-2">
         <svg
@@ -73,9 +73,9 @@ export function Features() {
       </span>
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-3xl mx-auto font-normal">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-800 max-w-3xl mx-auto font-medium">
             Everything You Need to{' '}
-            <span className="text-[#f37328]">Trade Smart</span>
+            <span className="text-gray-400">Trade Smart</span>
           </h2>
           <p className="text-lg md:text-xl text-black/60 max-w-2xl mx-auto">
             Professional-grade tools and enterprise security, designed for traders of all levels.
@@ -84,11 +84,31 @@ export function Features() {
 
 
 
-        <div className='flex justify-center items-center w-full'>
-        {/* Orange-400 gradient on top */}
-        {/* Full width image */}
-        <img src="src/assets/dashboard.png" alt="img" className='w-[900px] h-[600px]' />
-      </div>
+        {/* Creative image container with border and effects */}
+        <div className='flex justify-center items-center w-full mt-12'>
+          <div className='relative group'>
+            {/* Decorative background blur */}
+            <div className='absolute -inset-4 bg-gradient-to-r from-orange-400/20 via-purple-400/20 to-blue-400/20 rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-500'></div>
+            
+            {/* Main image container with creative border */}
+            <div className='relative'>
+              {/* Animated border */}
+              <div className='absolute -inset-1 bg-gradient-to-r from-gray-50 via-gray-500 to-gray-800 rounded-2xl opacity-75 group-hover:opacity-100 transition duration-500 blur-sm'></div>
+              
+              {/* Image wrapper */}
+              <div className='relative bg-white rounded-2xl p-2 shadow-2xl'>
+                <img 
+                  src="src/assets/dashboard.png" 
+                  alt="Trading Dashboard" 
+                  className='w-full max-w-[900px] h-auto rounded-xl object-contain' 
+                />
+                
+                {/* Corner decorations */}
+                
+              </div>
+            </div>
+          </div>
+        </div>
 
         
       </div>
