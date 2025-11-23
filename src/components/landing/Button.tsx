@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 
 const ButtonHero = (props: { title: string; size: string; }) => {
 

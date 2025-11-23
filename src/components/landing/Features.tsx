@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import dashboardImg from '../../assets/dashboard.png';
 import { motion } from 'framer-motion';
 
 
@@ -73,7 +74,7 @@ export function Features() {
       </span>
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-800 max-w-3xl mx-auto font-medium">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-800 max-w-3xl mx-auto font-bold text">
             Everything You Need to{' '}
             <span className="text-gray-400">Trade Smart</span>
           </h2>
@@ -97,10 +98,10 @@ export function Features() {
               
               {/* Image wrapper */}
               <div className='relative bg-white rounded-2xl p-2 shadow-2xl'>
-                <img 
-                  src="src/assets/dashboard.png" 
-                  alt="Trading Dashboard" 
-                  className='w-full max-w-[900px] h-auto rounded-xl object-contain' 
+                <img
+                  src={dashboardImg}
+                  alt="Trading Dashboard"
+                  className='w-full max-w-[900px] h-auto rounded-xl object-contain'
                 />
                 
                 {/* Corner decorations */}
