@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import dashboardImg from '../../assets/dashboard.png';
 import { motion } from 'framer-motion';
 
 
@@ -97,10 +98,10 @@ export function Features() {
               
               {/* Image wrapper */}
               <div className='relative bg-white rounded-2xl p-2 shadow-2xl'>
-                <img 
-                  src="src/assets/dashboard.png" 
-                  alt="Trading Dashboard" 
-                  className='w-full max-w-[900px] h-auto rounded-xl object-contain' 
+                <img
+                  src={dashboardImg}
+                  alt="Trading Dashboard"
+                  className='w-full max-w-[900px] h-auto rounded-xl object-contain'
                 />
                 
                 {/* Corner decorations */}
