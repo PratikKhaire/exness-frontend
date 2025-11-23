@@ -5,8 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate-index": "node scripts/generate-index.js",
-    "generate-index:ast": "node --experimental-specifier-resolution=node scripts/generate-index-ast.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
