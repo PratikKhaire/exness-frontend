@@ -16,6 +16,7 @@ function Nav() {
       <div className="absolute capitalize flex flex-col font-['KoHo:Regular',sans-serif] justify-center leading-[0] left-[calc(57.143%+72.585px)] not-italic text-[20px] text-black top-[43px] translate-y-[-50%] w-[94.402px]">
         <p className="leading-[normal]">Contact Us</p>
       </div>          
+    </div>
   );
 }
 

@@ -20,7 +20,7 @@ export default function App() {
         </svg>
       </div>
 
-      <Navigaqtion />
+      <Navigation />
       <main>
         <Hero />
         <Features />
