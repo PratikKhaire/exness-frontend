@@ -68,8 +68,8 @@ export function HowItWorks() {
           <div className="inline-block px-6 py-2 rounded-lg        bg-gradient-to-r  from-[#e9e9e9] to-[#747372] border border-[#f37328]/20">
             <span className="text-sm text-gray-900 uppercase tracking-wider">How It Works</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-4xl mx-auto font-medium">
-            Start Trading in{' '}
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-black max-w-4xl mx-auto font-bold">
+            Start Trading in {' '}
             <span className="text-gray-600">3 Simple Steps</span>
           </h2>
           <p className="text-lg md:text-xl text-black/60 max-w-2xl mx-auto">

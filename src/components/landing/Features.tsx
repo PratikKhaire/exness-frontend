@@ -74,7 +74,7 @@ export function Features() {
       </span>
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-800 max-w-3xl mx-auto font-medium">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-800 max-w-3xl mx-auto font-bold text">
             Everything You Need to{' '}
             <span className="text-gray-400">Trade Smart</span>
           </h2>
