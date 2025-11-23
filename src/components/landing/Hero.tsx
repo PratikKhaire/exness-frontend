@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MarketTicker } from "./MarketTicker";
-import { GridPattern } from "src/components/ui/grid-pattern"
+import { GridPattern } from "../ui/grid-pattern"
 import { cn } from "../ui/utils"
 import ButtonHero from "./Button";
 export function Hero() {
